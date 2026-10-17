@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pham Thi Thien Ha – Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&display=swap">
+<style>
+:root{--bg:#fff;--fg:#000;--mute:#6b6b6b;--line:#000;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--fg:#fff;--mute:#9a9a9a;--line:#fff}}
+:root[data-theme="dark"]{--bg:#000;--fg:#fff;--mute:#9a9a9a;--line:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.8 "Shippori Mincho","Hiragino Mincho ProN","Times New Roman",serif}
+main{max-width:760px;margin:0 auto;padding:0 24px 80px}
+section{padding:72px 0 0}
+h2{font-weight:400;font-size:15px;letter-spacing:.3em;margin:0 0 28px;display:flex;gap:14px;align-items:center}
+h2::after{content:"";flex:1;border-top:1px solid var(--line)}
+h2 span{font-size:22px;letter-spacing:0}
+p{margin:0 0 16px}a{color:inherit;text-decoration:none;background:linear-gradient(var(--line),var(--line)) 0 100%/100% 1px no-repeat;transition:background-size .4s}
+a:hover{background-size:0 1px}
+.top{display:flex;justify-content:space-between;padding:20px 0;font-size:13px;letter-spacing:.2em}
+button{font:inherit;color:inherit;background:none;border:1px solid var(--line);padding:2px 12px;cursor:pointer;letter-spacing:.1em}
+button:hover{background:var(--fg);color:var(--bg)}
+.hero{text-align:center;padding-top:40px}
+.hero svg{width:200px;height:200px;stroke:var(--fg);fill:none;stroke-width:3;stroke-linecap:round}
+.hero path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.6s ease forwards .3s}
+@keyframes draw{to{stroke-dashoffset:0}}
+h1{font-weight:400;font-size:clamp(30px,7vw,48px);letter-spacing:.12em;margin:8px 0 4px}
+.sub{color:var(--mute);letter-spacing:.2em;font-size:13px}.tag{margin-top:20px;font-size:18px}
+.links{margin-top:20px;display:flex;gap:22px;justify-content:center;flex-wrap:wrap;font-size:14px;letter-spacing:.1em}
+details{border-top:1px solid var(--line)}details:last-of-type{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+summary::-webkit-details-marker{display:none}summary b{font-weight:600;font-size:19px}
+summary i{font-style:normal;color:var(--mute);font-size:13px;letter-spacing:.1em}
+summary::after{content:"＋";font-size:16px;transition:transform .3s}details[open] summary::after{transform:rotate(45deg)}
+.body{padding:0 0 18px;font-size:15.5px}.body ul{margin:0 0 12px;padding-left:20px}.body li{margin-bottom:6px}
+.hint{color:var(--mute);font-size:13px;letter-spacing:.1em}
+.board{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+@media(max-width:560px){.board{grid-template-columns:1fr}}
+.slot{border:1px dashed var(--line);min-height:70px;padding:10px 12px;font-size:13.5px;display:flex;flex-direction:column;gap:8px}
+.slot[data-done]{border-style:solid}.slot small{color:var(--mute)}
+.tray{display:flex;flex-wrap:wrap;gap:10px;min-height:48px}
+.chip{border:1px solid var(--line);padding:5px 14px;background:var(--bg);cursor:grab;touch-action:none;user-select:none;font-size:14px;position:relative;z-index:1}
+.chip.drag{cursor:grabbing;z-index:9;background:var(--fg);color:var(--bg)}
+.shake{animation:sh .35s}@keyframes sh{25%{margin-left:-8px}75%{margin-left:8px}}
+#msg{min-height:28px;margin-top:14px;font-size:15px}
+.sand{position:relative;height:230px;border:1px solid var(--line);margin-top:6px;background-image:repeating-linear-gradient(0deg,transparent 0 17px,var(--mute) 17px 18px);background-size:100% 18px;background-blend-mode:normal;opacity:1}
+.sand .chip{position:absolute;border-radius:40px}
+.skills p{margin-bottom:8px;font-size:15.5px}.skills b{font-weight:600;letter-spacing:.1em}
+footer{margin-top:80px;text-align:center;color:var(--mute);font-size:12px;letter-spacing:.2em}
+</style></head><body><main>
+<div class="top"><span>ハ · PORTFOLIO 2026</span><button id="th" aria-label="Switch light or dark">白 / 黒</button></div>
+
+<div class="hero">
+<svg viewBox="0 0 200 200" aria-hidden="true"><path pathLength="1" d="M100 24A76 76 0 1 1 62 36"/></svg>
+<h1>Pham Thi Thien Ha</h1>
+<div class="sub">SOFTWARE ENGINEERING · PTIT · HANOI</div>
+<p class="tag">I like to see the whole system before I build any part of it.</p>
+<div class="links"><a href="mailto:phamthithienha17032005@gmail.com">Email</a><a href="https://github.com/hashi173">GitHub</a><a href="https://github.com/thanhtrnnn/universe">UniVerse repository</a></div>
+</div>
+
+<section><h2><span>一</span>ABOUT</h2>
+<p>I am a fourth-year student who is strongest at system analysis and design. I question requirements until they are clear, check details carefully, keep to deadlines, and talk openly with my team. I also try to think from the user’s and the customer’s side, because a system is only good if people can use it.</p>
+<p>I lead most of my group projects, and I am aiming to grow toward tech lead, project manager, or senior business analyst roles.</p></section>
+
+<section><h2><span>二</span>PROJECTS</h2>
+<details open><summary><b>UniVerse</b><i>TEAM LEADER · A+ (9.0/10)</i></summary><div class="body">
+<p>A smart university system for students, lecturers, and administrators. It replaces scattered websites, hand-taken attendance that is easy to fake, and late announcements. Foundation Practicum (TTCS), PTIT, team HTH of 3.</p>
+<ul><li>JavaFX desktop app for admins and lecturers, Android app for students with QR code and GPS attendance.</li>
+<li>Java REST API on Render, PostgreSQL (12 tables), Redis for sessions, Kafka for notifications.</li>
+<li>10 core functions built in three iterations, each with use case scenarios, class and sequence diagrams, and black-box test cases.</li>
+<li>My part: led the team, wrote the requirements chapter, drew the shared class and entity relationship diagrams, and built three modules end to end (edit user information, send notifications to students, edit class schedules).</li>
+<li>We listed our own weak points: shared QR photos, fake GPS, and no load balancing. Face recognition, a dynamic QR code, and a web portal are the next steps.</li></ul></div></details>
+<details><summary><b>PetCare Chain Manager</b><i>SOFTWARE PROJECT MANAGEMENT</i></summary><div class="body">
+<p>Management software for a pet hotel and spa chain with 3 branches, web and mobile. Team of 5.</p>
+<ul><li>Requirement Specification for 18 functions: booking, point of sale, inventory transfer, staff scheduling, reporting.</li>
+<li>Project Charter with scope, a 4-month schedule, a 600M VND budget, deliverables, success criteria, and risks that each have a mitigation.</li>
+<li>Both documents revised after lecturer feedback so scope, budget, and activities stayed consistent.</li></ul></div></details>
+<details><summary><b>Machine Learning Applications</b><i>TEAM LEADER · TEAM OF 3</i></summary><div class="body">
+<p>Intelligent System Development course, PTIT.</p>
+<ul><li>Three prediction systems: diabetes risk, Vietnam house prices, customer satisfaction. Each compares 5 or more models and picks the best by evaluation metrics.</li>
+<li>Each model is served by a Django REST API with a Kotlin Android client.</li>
+<li>A CIFAR-10 image classifier written three ways: NumPy from scratch, TensorFlow/Keras, and PyTorch.</li></ul></div></details>
+</section>
+
+<section><h2><span>三</span>PLAY · BUILD UNIVERSE</h2>
+<p>Drag each piece of the UniVerse system onto the job it does. A wrong place and it will shake.</p>
+<div class="board" id="board"></div>
+<div class="tray" id="tray"></div><div id="msg" class="hint">0 / 6 placed</div></section>
+
+<section><h2><span>四</span>PLAY · MY STONES</h2>
+<p class="hint">Six things I try to bring to a team. Move them anywhere you like.</p>
+<div class="sand" id="sand"></div></section>
+
+<section class="skills"><h2><span>五</span>SKILLS</h2>
+<p><b>TECHNICAL</b>　Java, Kotlin, Python; Spring Boot, Django; PostgreSQL; Android development; Git</p>
+<p><b>METHODS</b>　System analysis and design (UML), requirements specification, project planning (WBS, CPM, EVM)</p>
+<p><b>LANGUAGES</b>　Vietnamese (native); English (IELTS 7.0); Japanese (studying)</p></section>
+<footer>phamthithienha17032005@gmail.com</footer>
+</main>
+<script>
+const root=document.documentElement;
+document.getElementById('th').onclick=()=>{const dark=getComputedStyle(root).getPropertyValue('--bg').trim()==='#000';root.dataset.theme=dark?'light':'dark'};
+const parts=[['desktop','JavaFX desktop app'],['android','Android app'],['api','REST API (Java)'],['db','PostgreSQL'],['redis','Redis'],['kafka','Kafka']];
+const slots=[['desktop','Where admins and lecturers work'],['android','Where students scan the QR code'],['api','The service the phone talks to'],['db','Where every record lives'],['redis','Where session tokens are kept'],['kafka','Where notifications travel']];
+const board=document.getElementById('board'),tray=document.getElementById('tray'),msg=document.getElementById('msg');
+slots.forEach(([k,t])=>{const s=document.createElement('div');s.className='slot';s.dataset.ans=k;s.innerHTML='<small>'+t+'</small>';board.appendChild(s)});
+parts.slice().sort(()=>Math.random()-.5).forEach(([k,t])=>{const c=document.createElement('div');c.className='chip';c.dataset.id=k;c.textContent=t;tray.appendChild(c)});
+const words=['Whole picture','Critical thinking','Careful details','On time','Clear talk','User’s view'];
+const sand=document.getElementById('sand');
+words.forEach((w,i)=>{const c=document.createElement('div');c.className='chip free';c.textContent=w;c.style.left=(6+(i%3)*32)+'%';c.style.top=(28+Math.floor(i/3)*80)+'px';sand.appendChild(c)});
+let placed=0;
+document.querySelectorAll('.chip').forEach(c=>{
+ let d=null;c._x=0;c._y=0;
+ c.addEventListener('pointerdown',e=>{d={x:e.clientX,y:e.clientY};c.setPointerCapture(e.pointerId);c.classList.add('drag')});
+ c.addEventListener('pointermove',e=>{if(d)c.style.transform='translate('+(c._x+e.clientX-d.x)+'px,'+(c._y+e.clientY-d.y)+'px)'});
+ c.addEventListener('pointerup',e=>{
+  if(!d)return;c.classList.remove('drag');
+  if(c.classList.contains('free')){c._x+=e.clientX-d.x;c._y+=e.clientY-d.y;d=null;return}
+  d=null;
+  const s=document.elementsFromPoint(e.clientX,e.clientY).find(el=>el.classList&&el.classList.contains('slot'));
+  if(s&&s.dataset.ans===c.dataset.id&&!s.dataset.done){
+   c.style.transform='';s.appendChild(c);s.dataset.done=1;c.style.cursor='default';c.style.pointerEvents='none';placed++;
+   msg.textContent=placed===6?'The system stands. 完成':placed+' / 6 placed';
+  }else{c.style.transform='';c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake')}
+ });
+});
+</script></body></html>
